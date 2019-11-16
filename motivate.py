@@ -54,7 +54,7 @@ def quote():
             return
 
         ran_no = random.randint(1, len(quotes["data"])) - 1
-        print("file:", rand_no, "quote:", ran_no)
+        # print("file:", rand_no, "quote:", ran_no)
         if "quote" in quotes["data"][ran_no]:
             quote = quotes["data"][ran_no]["quote"]
             author = quotes["data"][ran_no]["author"]
