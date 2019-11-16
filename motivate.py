@@ -19,7 +19,7 @@ def quote():
     if os.name == 'nt':
         data_dir = os.path.join(abspath, 'motivate', 'data')
     else:
-        data_dir = os.path.join('data')
+        data_dir = os.path.join('/home/arga/Scripts/motivate/data')
 
     try:
         num_of_json = len([f for f in os.listdir(data_dir)
