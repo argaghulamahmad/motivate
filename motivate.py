@@ -3,6 +3,8 @@ import json
 import os
 import random
 
+scripts_path = '/home/arga/Scripts'
+
 
 def getlink(file):
     if os.path.islink(file):
@@ -19,7 +21,8 @@ def quote():
     if os.name == 'nt':
         data_dir = os.path.join(abspath, 'motivate', 'data')
     else:
-        data_dir = os.path.join('/home/arga/Scripts/motivate/data')
+        data_dir = os.path.join(scripts_path, 'motivate', 'data')
+        print(data_dir)
 
     try:
         num_of_json = len([f for f in os.listdir(data_dir)
