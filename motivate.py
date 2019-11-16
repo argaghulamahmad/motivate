@@ -96,7 +96,7 @@ def get_filename(data_dir):
         print("Can't find the data folder. You probably haven't run 'install.sh' yet.")
         exit(1)
 
-    rand_no = random.randint(2, num_of_json)
+    rand_no = random.randint(1, num_of_json)
     filename = os.path.join(data_dir, str(rand_no).zfill(3) + '.json')
     return filename
 
