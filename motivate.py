@@ -22,7 +22,6 @@ def quote():
         data_dir = os.path.join(abspath, 'motivate', 'data')
     else:
         data_dir = os.path.join(scripts_path, 'motivate', 'data')
-        print(data_dir)
 
     try:
         num_of_json = len([f for f in os.listdir(data_dir)
